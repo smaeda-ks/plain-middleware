@@ -4,5 +4,7 @@
 // };
 
 export default function middleware(request) {
-    return new Response('success')
+    // to force new deployment (script hash changes)
+    const rand = "change-this-text-in-every-deployment";
+    return new Response(rand)
 }
